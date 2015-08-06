@@ -24,7 +24,7 @@ plot(y, x$Global_active_power, type = "l", ylab = "Global Active Power (kilowatt
 plot(y,x$Sub_metering_1, type = "l", ylab = "Energy sub metering",xlab = "")
 lines(y,x$Sub_metering_2, col="red")
 lines(y,x$Sub_metering_3, col = "blue")
-legend("topright",legend = colnames(x[,7:9]),lwd = 1,col = c("black","red","blue"),cex = 0.8)
+legend("topright",legend = colnames(x[,7:9]),lwd = 1,col = c("black","red","blue"),cex = 0.8, bty = "n")
 
 #third
 plot(y,x$Voltage, type="l",xlab = "datatime", ylab = "Voltage")
